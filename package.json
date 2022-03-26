@@ -1,0 +1,43 @@
+{
+  "name": "avat",
+  "version": "1.1.0",
+  "main": "index.js",
+  "license": "i-link.pro",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "format": "prettier --write \"test/**/*.ts\" \"scripts/**/*.ts\" \"hardhat.config.ts\"",
+    "lint:ts": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix --plugin tsc --rule 'tsc/config: [2, {configFile: \"./tsconfig.json\"}]'",
+    "release": "standard-version --commit-all",
+    "first-release": "standard-version --commit-all --first-release"
+  },
+  "devDependencies": {
+    "@nomiclabs/buidler": "1.4.8",
+    "@nomiclabs/hardhat-ethers": "2.0.5",
+    "@nomiclabs/hardhat-etherscan": "2.1.8",
+    "@nomiclabs/hardhat-waffle": "2.0.1",
+    "@openzeppelin/contracts": "4.4.2",
+    "@openzeppelin/contracts-upgradeable": "4.4.2",
+    "@openzeppelin/hardhat-upgrades": "1.14.0",
+    "@typechain/ethers-v5": "7.0.1",
+    "@typechain/hardhat": "2.3.0",
+    "@types/chai": "4.2.21",
+    "@types/mocha": "9.0.0",
+    "@types/node": "16.9.0",
+    "chai": "4.3.4",
+    "ethereum-waffle": "3.4.0",
+    "ethers": "5.4.6",
+    "hardhat": "2.9.1",
+    "solidity-coverage": "0.7.20",
+    "standard-version": "9.3.0",
+    "ts-generator": "0.1.1",
+    "ts-node": "10.2.1",
+    "typechain": "5.1.2",
+    "typescript": "4.4.2"
+  },
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "hardhat-abi-exporter": "2.4.0"
+  }
+}
